@@ -1,0 +1,45 @@
+### Define users
+## o - organisation/VO r - role g - group
+#test users
+= xgridppusr o: gridpp 
+= xdteamusr o: dteam
+= xopsuser o: ops
+= xwlcguser o: wlcg
+= wlcgtknusr o: https://wlcg.cloud.cnaf.infn.it/ g: /wlcg
+#atlas
+= xatlasprd o: atlas r: production
+= xatlasplt o: atlas r: pilot
+= xatlasukprd o: atlas r: production g: uk
+= xatlasukusr o: atlas g: uk
+= xatlasusr o: atlas
+#hyperk
+= xhyperkprd o: hyperk.org r: production
+= xhyperkusr o: hyperk.org
+#lsst
+= xlsstprd o: lsst r: ddmopr
+= xlsstusr o: lsst
+#ska
+= xskateleplt o: skatelescope.eu r: pilot
+= xskateleusr o: skatelescope.eu
+= xskateletkn o: https://iam-escape.cloud.cnaf.infn.it/ g: /escape/ska
+### Define acceses
+## a - all-rights l - list (don't forget) r - read w - write
+x xgridppusr /cephfs/grid/gridpp a /cephfs/grid/srr lr
+x xdteamusr /cephfs/grid/dteam a /cephfs/grid/wlcg a /cephfs/grid/srr lr
+x xatlasprd /cephfs/grid/atlas a /cephfs/grid/srr lr
+x xatlasplt /cephfs/grid/atlas/atlasdatadisk lr /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/srr lr
+x xatlasukprd /cephfs/grid/atlas/atlasdatadisk lr /cephfs/grid/atlas/atlaslocalgroupdisk a /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/srr lr
+x xatlasukusr /cephfs/grid/atlas/atlasdatadisk lr /cephfs/grid/atlas/atlaslocalgroupdisk lrw /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/srr lr
+x xatlasusr /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/atlas/atlasdatadisk lr  /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/srr lr
+x xopsuser /cephfs/grid/ops a /cephfs/grid/srr lr
+x xwlcguser /cephfs/grid/wlcg a /cephfs/grid/srr lr
+x wlcgtknusr /cephfs/grid/wlcg a /cephfs/grid/srr lr
+x xhyperkprd /cephfs/grid/hyperk.org a /cephfs/grid/srr lr
+x xhyperkusr /cephfs/grid/hyperk.org/ lr /cephfs/grid/srr lr
+x xlsstprd /cephfs/grid/lsst a /cephfs/grid/srr lr
+x xlsstusr /cephfs/grid/lsst a /cephfs/grid/srr lr
+x xskateleplt /cephfs/grid/skatelescope.eu a /cephfs/grid/srr lr
+x xskateleusr /cephfs/grid/skatelescope.eu a /cephfs/grid/srr lr
+x xskateletkn /cephfs/grid/skatelescope.eu a /cephfs/grid/srr lr
+#other access to srr
+u * /cephfs/grid/srr lr
