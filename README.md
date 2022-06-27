@@ -6,3 +6,5 @@ Principly:
 -xroot server config file
 -authdb config file
 -scitokens config file
+
+Also some setup instructions.
