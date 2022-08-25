@@ -1,3 +1,4 @@
+STANDALONE SERVER INSTRUCTIONS
 1) Install a Server with an fresh, updated EL version. Mount the data volume on it.
 2) Install the EPEL repos
 3) Add the CA rpm repo and install the ca rpm
@@ -13,3 +14,11 @@
 12) Make sure the xrootd user has the accesses you desire to the data in the data volume. This suggested setup has no user/context switching.
 13) Start the xroot process with systemctl start xrootd@$service. Note that it does a lot of config checking at the start.
 14) Logs by default are in /var/log/xrootd/$service/xrootd.log - if failing to start clues will be in here.
+
+REDIRECTOR INSTRUCTIONS
+1)install as above - recommend testing out a standalone server first.
+2)Setup redirector and data-server configs - you can be clever and meld all this into one but I don't think that's worth while.
+3)On the redirector systemctl start cmsd@<redirector config> and xrootd@<redirector config>
+4)On the data server start the same services using the @<data-server config>
+5)You can run a data server and redirector on the same node.
+NOTE - be sure to that redirectors and servers can freely communicate - firewall or IPv6 problems can cause issues.
