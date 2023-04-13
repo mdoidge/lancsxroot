@@ -27,10 +27,10 @@
 x xgridppusr /cephfs/grid/gridpp a /cephfs/grid/srr lr
 x xdteamusr /cephfs/grid/dteam a /cephfs/grid/wlcg a /cephfs/grid/srr lr
 x xatlasprd /cephfs/grid/atlas a /cephfs/grid/srr lr
-x xatlasplt /cephfs/grid/atlas/atlasdatadisk lr /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/srr lr
-x xatlasukprd /cephfs/grid/atlas/atlasdatadisk lr /cephfs/grid/atlas/atlaslocalgroupdisk a /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/srr lr
-x xatlasukusr /cephfs/grid/atlas/atlasdatadisk lr /cephfs/grid/atlas/atlaslocalgroupdisk lrw /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/srr lr
-x xatlasusr /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/atlas/atlasdatadisk lr  /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/srr lr
+x xatlasplt /cephfs/grid/atlas/atlasdatadisk lr /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/atlas/atlasgroupdisk lr /cephfs/grid/srr lr
+x xatlasukprd /cephfs/grid/atlas/atlasdatadisk lr /cephfs/grid/atlas/atlaslocalgroupdisk a /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/srr lr
+x xatlasukusr /cephfs/grid/atlas/atlasdatadisk lr /cephfs/grid/atlas/atlaslocalgroupdisk lrw /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/srr lr
+x xatlasusr /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/atlas/atlasdatadisk lr  /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/srr lr
 x xopsuser /cephfs/grid/ops a /cephfs/grid/srr lr
 x xwlcguser /cephfs/grid/wlcg a /cephfs/grid/srr lr
 x wlcgtknusr /cephfs/grid/wlcg a /cephfs/grid/srr lr
