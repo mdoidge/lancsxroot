@@ -22,6 +22,10 @@
 = xskateleplt o: skatelescope.eu r: pilot
 = xskateleusr o: skatelescope.eu
 = xskateletkn o: https://iam-escape.cloud.cnaf.infn.it/ g: /escape/ska
+#dune
+= xduneplt o: dune r: pilot
+= xduneprd o: dune r: Production
+= xduneusr o: dune
 ### Define acceses
 ## a - all-rights l - list (don't forget) r - read w - write
 x xgridppusr /cephfs/grid/gridpp a /cephfs/grid/srr lr
@@ -41,5 +45,8 @@ x xlsstusr /cephfs/grid/lsst a /cephfs/grid/srr lr
 x xskateleplt /cephfs/grid/skatelescope.eu a /cephfs/grid/srr lr
 x xskateleusr /cephfs/grid/skatelescope.eu a /cephfs/grid/srr lr
 x xskateletkn /cephfs/grid/skatelescope.eu a /cephfs/grid/srr lr
+x xduneprd /cephfs/grid/dune a /cephfs/grid/srr lr
+x xduneplt /cephfs/grid/dune a /cephfs/grid/srr lr
+x xduneusr /cephfs/grid/dune lr /cephfs/grid/srr lr
 #other access to srr
 u * /cephfs/grid/srr lr
