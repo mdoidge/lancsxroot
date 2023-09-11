@@ -15,6 +15,9 @@
 #hyperk
 = xhyperkprd o: hyperk.org r: production
 = xhyperkusr o: hyperk.org
+#t2k
+= xt2kprd o: t2k.org r: production
+= xt2kusr o: t2k.org
 #lsst
 = xlsstprd o: lsst r: ddmopr
 = xlsstusr o: lsst
@@ -40,6 +43,8 @@ x xwlcguser /cephfs/grid/wlcg a /cephfs/grid/srr lr
 x wlcgtknusr /cephfs/grid/wlcg a /cephfs/grid/srr lr
 x xhyperkprd /cephfs/grid/hyperk.org a /cephfs/grid/srr lr
 x xhyperkusr /cephfs/grid/hyperk.org/ lr /cephfs/grid/srr lr
+x xt2kprd /cephfs/grid/t2k.org a /cephfs/grid/srr lr
+x xt2kusr /cephfs/grid/t2k.org lr /cephfs/grid/srr lr
 x xlsstprd /cephfs/grid/lsst a /cephfs/grid/srr lr
 x xlsstusr /cephfs/grid/lsst a /cephfs/grid/srr lr
 x xskateleplt /cephfs/grid/skatelescope.eu a /cephfs/grid/srr lr
