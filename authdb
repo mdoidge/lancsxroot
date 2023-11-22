@@ -57,6 +57,6 @@ x xduneprd /cephfs/grid/dune a /cephfs/grid/srr lr
 x xduneplt /cephfs/grid/dune a /cephfs/grid/srr lr
 x xduneusr /cephfs/grid/dune lr /cephfs/grid/srr lr
 x xeuclidplt /cephfs/grid/eucliduk.net a /cephfs/grid/srr lr
-x xeuclidusr /cephfs/grid/eucliduk.net/user a /cephfs/grid/eucliduk.net lr /cephfs/grid/srr lr
+x xeuclidusr /cephfs/grid/eucliduk.net/eucliduk.net/user a /cephfs/grid/eucliduk.net lr /cephfs/grid/srr lr
 #other access to srr
 u * /cephfs/grid/srr lr
