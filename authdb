@@ -29,6 +29,9 @@
 = xduneplt o: dune r: pilot
 = xduneprd o: dune r: Production
 = xduneusr o: dune
+#euclid
+= xeuclidplt o: eucliduk.net r: pilot
+= xeuclidusr o: eucliduk.net
 ### Define acceses
 ## a - all-rights l - list (don't forget) r - read w - write
 x xgridppusr /cephfs/grid/gridpp a /cephfs/grid/srr lr
@@ -53,5 +56,7 @@ x xskateletkn /cephfs/grid/skatelescope.eu a /cephfs/grid/srr lr
 x xduneprd /cephfs/grid/dune a /cephfs/grid/srr lr
 x xduneplt /cephfs/grid/dune a /cephfs/grid/srr lr
 x xduneusr /cephfs/grid/dune lr /cephfs/grid/srr lr
+x xeuclidplt /cephfs/grid/eucliduk.net a /cephfs/grid/srr lr
+x xeuclidusr /cephfs/grid/eucliduk.net/user a /cephfs/grid/eucliduk.net lr /cephfs/grid/srr lr
 #other access to srr
 u * /cephfs/grid/srr lr
