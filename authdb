@@ -4,8 +4,8 @@
 = xgridppusr o: gridpp 
 = xdteamusr o: dteam
 = xopsuser o: ops
-= xwlcguser o: wlcg
-= wlcgtknusr o: https://wlcg.cloud.cnaf.infn.it/ g: /wlcg
+#= xwlcguser o: wlcg
+#= wlcgtknusr o: https://wlcg.cloud.cnaf.infn.it/ g: /wlcg
 #atlas
 = xatlasprd o: atlas r: production
 = xatlasplt o: atlas r: pilot
@@ -42,8 +42,8 @@ x xatlasukprd /cephfs/grid/atlas/atlasdatadisk lr /cephfs/grid/atlas/atlaslocalg
 x xatlasukusr /cephfs/grid/atlas/atlasdatadisk lr /cephfs/grid/atlas/atlaslocalgroupdisk lrw /cephfs/grid/atlas/atlasgroupdisk lr /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/srr lr
 x xatlasusr /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/atlas/atlasgroupdisk lr /cephfs/grid/atlas/atlasdatadisk lr  /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/srr lr
 x xopsuser /cephfs/grid/ops a /cephfs/grid/srr lr
-x xwlcguser /cephfs/grid/wlcg a /cephfs/grid/srr lr
-x wlcgtknusr /cephfs/grid/wlcg a /cephfs/grid/srr lr
+#x xwlcguser /cephfs/grid/wlcg a /cephfs/grid/srr lr
+#x wlcgtknusr /cephfs/grid/wlcg a /cephfs/grid/srr lr
 x xhyperkprd /cephfs/grid/hyperk.org a /cephfs/grid/srr lr
 x xhyperkusr /cephfs/grid/hyperk.org/hyperk.org/user a /cephfs/grid/hyperk.org/ lr /cephfs/grid/srr lr
 x xt2kprd /cephfs/grid/t2k.org a /cephfs/grid/srr lr
