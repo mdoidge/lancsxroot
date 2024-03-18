@@ -1,0 +1,31 @@
+[Global]
+onmissing = passthrough
+#audience = https://xgate.hec.lancs.ac.uk:1094
+#from ggus1644773 suggestion by Petr
+audience = xgate.hec.lancs.ac.uk, https://wlcg.cern.ch/jwt/v1/any, https://xgate.hec.lancs.ac.uk:1094, roots://xgate.hec.lancs.ac.uk:1094
+
+#temp disable WLCG
+#[Issuer WLCG IAM]
+#issuer = https://wlcg.cloud.cnaf.infn.it/
+#base_path = /cephfs/grid/wlcg
+#map_subject = false
+#default_user = xrootd
+
+[Issuer IAM ESCAPE]
+issuer = https://iam-escape.cloud.cnaf.infn.it/
+base_path = /cephfs/grid/skatelescope.eu
+map_subject = false
+default_user = xrootd
+
+[Issuer ATLAS]
+issuer = https://atlas-auth.web.cern.ch/
+base_path = /cephfs/grid/atlas
+map_subject = false
+default_user = xrootd
+
+[Issuer ATLAS NEW]
+issuer = https://atlas-auth.cern.ch/
+base_path = /cephfs/grid/atlas
+map_subject = false
+default_user = xrootd
+
