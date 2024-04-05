@@ -32,6 +32,12 @@
 #euclid
 = xeuclidplt o: eucliduk.net r: pilot
 = xeuclidusr o: eucliduk.net
+#uboone
+= xubooneprd o: fermilab g: uboone r: data
+= xubooneusr o: fermilab g: uboone 
+#cta
+= xctaprd o: vo.cta.intp3.fr r: data
+= xctausr o: vo.cta.intp3.fr
 ### Define acceses
 ## a - all-rights l - list (don't forget) r - read w - write
 x xgridppusr /cephfs/grid/gridpp a /cephfs/grid/srr lr
@@ -58,5 +64,9 @@ x xduneplt /cephfs/grid/dune a /cephfs/grid/srr lr
 x xduneusr /cephfs/grid/dune lr /cephfs/grid/srr lr
 x xeuclidplt /cephfs/grid/eucliduk.net a /cephfs/grid/srr lr
 x xeuclidusr /cephfs/grid/eucliduk.net/eucliduk.net/user a /cephfs/grid/eucliduk.net lr /cephfs/grid/srr lr
+x xubooneprd /cephfs/grid/uboone a /cephfs/grid/srr lr
+x xubooneusr /cephfs/grid/uboone lr /cephfs/grid/srr lr
+x xctaprd /cephfs/grid/vo.cta.in2p3.fr a /cephfs/grid/srr lr
+x xctausr /cephfs/grid/vo.cta.in2p3.fr/vo.cta.in2p3.fr a /cephfs/grid/vo.cta.in2p3.fr lr /cephfs/grid/srr lr
 #other access to srr
 u * /cephfs/grid/srr lr
