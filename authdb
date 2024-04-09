@@ -36,8 +36,8 @@
 = xubooneprd o: fermilab g: uboone r: data
 = xubooneusr o: fermilab g: uboone 
 #cta
-= xctaprd o: vo.cta.intp3.fr r: data
-= xctausr o: vo.cta.intp3.fr
+= xctaprd o: vo.cta.in2p3.fr r: Data
+= xctausr o: vo.cta.in2p3.fr
 ### Define acceses
 ## a - all-rights l - list (don't forget) r - read w - write
 x xgridppusr /cephfs/grid/gridpp a /cephfs/grid/srr lr
