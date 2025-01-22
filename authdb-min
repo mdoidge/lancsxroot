@@ -1,0 +1,14 @@
+### Define users
+## o - organisation/VO r - role g - group
+#test users
+= xgridppusr o: gridpp 
+= xdteamusr o: dteam
+= xopsuser o: ops
+### Define acceses
+### replace path as applicable
+## a - all-rights l - list (don't forget) r - read w - write
+x xgridppusr /cephfs/grid/gridpp a /cephfs/grid/srr lr
+x xdteamusr /cephfs/grid/dteam a /cephfs/grid/wlcg a /cephfs/grid/srr lr
+x xopsuser /cephfs/grid/ops a /cephfs/grid/srr lr
+#other access to srr
+u * /cephfs/grid/srr lr
