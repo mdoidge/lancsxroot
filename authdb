@@ -4,8 +4,6 @@
 = xgridppusr o: gridpp 
 = xdteamusr o: dteam
 = xopsuser o: ops
-#= xwlcguser o: wlcg
-#= wlcgtknusr o: https://wlcg.cloud.cnaf.infn.it/ g: /wlcg
 #atlas
 = xatlasprd o: atlas r: production
 = xatlasplt o: atlas r: pilot
@@ -19,12 +17,12 @@
 = xt2kprd o: t2k.org r: production
 = xt2kusr o: t2k.org
 #lsst
+##new
+= xlsstdrpraw o: lsst r: raw g: /lsst/drp 
+= xlsstdrp o: lsst g: /lsst/drp
+##old, soon to be defunct
 = xlsstprd o: lsst r: ddmopr
 = xlsstusr o: lsst
-#ska
-= xskateleplt o: skatelescope.eu r: pilot
-= xskateleusr o: skatelescope.eu
-= xskateletkn o: https://iam-escape.cloud.cnaf.infn.it/ g: /escape/ska
 #dune
 = xduneplt o: dune r: pilot
 = xduneprd o: dune r: Production
@@ -40,32 +38,39 @@
 = xctausr o: vo.cta.in2p3.fr
 ### Define acceses
 ## a - all-rights l - list (don't forget) r - read w - write
+#test VOs
 x xgridppusr /cephfs/grid/gridpp a /cephfs/grid/srr lr
 x xdteamusr /cephfs/grid/dteam a /cephfs/grid/wlcg a /cephfs/grid/srr lr
+#atlas
 x xatlasprd /cephfs/grid/atlas a /cephfs/grid/srr lr
 x xatlasplt /cephfs/grid/atlas/atlasdatadisk lr /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/atlas/atlasgroupdisk lr /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/atlas/atlasgroupdisk lr /cephfs/grid/srr lr
 x xatlasukprd /cephfs/grid/atlas/atlasdatadisk lr /cephfs/grid/atlas/atlaslocalgroupdisk a /cephfs/grid/atlas/atlasgroupdisk a /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/srr lr
 x xatlasukusr /cephfs/grid/atlas/atlasdatadisk lr /cephfs/grid/atlas/atlaslocalgroupdisk lrw /cephfs/grid/atlas/atlasgroupdisk lr /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/srr lr
 x xatlasusr /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/atlas/atlasgroupdisk lr /cephfs/grid/atlas/atlasdatadisk lr  /cephfs/grid/atlas/atlasscratchdisk a /cephfs/grid/atlas/atlaslocalgroupdisk lr /cephfs/grid/srr lr
+#ops
 x xopsuser /cephfs/grid/ops a /cephfs/grid/srr lr
-#x xwlcguser /cephfs/grid/wlcg a /cephfs/grid/srr lr
-#x wlcgtknusr /cephfs/grid/wlcg a /cephfs/grid/srr lr
+## neutrino peeps
 x xhyperkprd /cephfs/grid/hyperk.org a /cephfs/grid/srr lr
 x xhyperkusr /cephfs/grid/hyperk.org/hyperk.org/user a /cephfs/grid/hyperk.org/ a /cephfs/grid/srr lr
 x xt2kprd /cephfs/grid/t2k.org a /cephfs/grid/srr lr
 x xt2kusr /cephfs/grid/t2k.org/t2k.org/user a /cephfs/grid/t2k.org a /cephfs/grid/srr lr
+##lsst new, with tmp authtest directory
+x xlsstdrpraw /cephfs/grid/lsst a /cephfs/grid/authtest a /cephfs/grid/srr lr
+x xlsstdrp /cephfs/grid/lsst lrw /cephfs/grid/authtest lrw /cephfs/grid/srr lr
+##lsst old, reduced regular user permissions
 x xlsstprd /cephfs/grid/lsst a /cephfs/grid/srr lr
-x xlsstusr /cephfs/grid/lsst a /cephfs/grid/srr lr
-x xskateleplt /cephfs/grid/skatelescope.eu a /cephfs/grid/srr lr
-x xskateleusr /cephfs/grid/skatelescope.eu a /cephfs/grid/srr lr
-x xskateletkn /cephfs/grid/skatelescope.eu a /cephfs/grid/srr lr
+x xlsstusr /cephfs/grid/lsst lr /cephfs/grid/srr lr
+##dune
 x xduneprd /cephfs/grid/dune a /cephfs/grid/srr lr
 x xduneplt /cephfs/grid/dune a /cephfs/grid/srr lr
 x xduneusr /cephfs/grid/dune lr /cephfs/grid/srr lr
+##euclid
 x xeuclidplt /cephfs/grid/eucliduk.net a /cephfs/grid/srr lr
 x xeuclidusr /cephfs/grid/eucliduk.net/eucliduk.net/user a /cephfs/grid/eucliduk.net lr /cephfs/grid/srr lr
+##uboone
 x xubooneprd /cephfs/grid/uboone a /cephfs/grid/srr lr
 x xubooneusr /cephfs/grid/uboone lr /cephfs/grid/srr lr
+##CTA
 x xctaprd /cephfs/grid/vo.cta.in2p3.fr a /cephfs/grid/srr lr
 x xctausr /cephfs/grid/vo.cta.in2p3.fr/vo.cta.in2p3.fr a /cephfs/grid/vo.cta.in2p3.fr lr /cephfs/grid/srr lr
 #other access to srr
