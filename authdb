@@ -56,7 +56,7 @@ x xt2kprd /cephfs/grid/t2k.org a /cephfs/grid/srr lr
 x xt2kusr /cephfs/grid/t2k.org/t2k.org/user a /cephfs/grid/t2k.org a /cephfs/grid/srr lr
 ##lsst new, with tmp authtest directory
 x xlsstdrpraw /cephfs/grid/lsst a /cephfs/grid/authtest a /cephfs/grid/srr lr
-x xlsstdrp /cephfs/grid/lsst lrw /cephfs/grid/authtest lrw /cephfs/grid/srr lr
+x xlsstdrp /cephfs/grid/lsst a /cephfs/grid/authtest lrw /cephfs/grid/srr lr
 ##lsst old, reduced regular user permissions
 x xlsstprd /cephfs/grid/lsst a /cephfs/grid/srr lr
 x xlsstusr /cephfs/grid/lsst lr /cephfs/grid/srr lr
