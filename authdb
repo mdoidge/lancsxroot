@@ -18,7 +18,7 @@
 = xt2kusr o: t2k.org
 #lsst
 ##new
-= xlsstdrpraw o: lsst r: raw g: /lsst/drp 
+= xlsstdrpraw o: lsst g: /lsst/drp r: raw
 = xlsstdrp o: lsst g: /lsst/drp
 ##old, soon to be defunct
 = xlsstprd o: lsst r: ddmopr
