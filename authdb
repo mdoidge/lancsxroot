@@ -18,10 +18,10 @@
 = xt2kusr o: t2k.org
 #lsst
 ##new
-= xlsstdrpraw o: lsst g: /lsst/drp r: raw
-= xlsstdrp o: lsst g: /lsst/drp
+= xlsstdrpraw o: lsst  r: raw
+= xlsstdrp o: lsst r: drp
 ##old, soon to be defunct
-#= xlsstprd o: lsst r: ddmopr
+= xlsstprd o: lsst r: ddmopr
 #= xlsstusr o: lsst
 #dune
 = xduneplt o: dune r: pilot
@@ -58,9 +58,10 @@ x xhyperkusr /cephfs/grid/hyperk.org/hyperk.org/user a /cephfs/grid/hyperk.org/ 
 x xt2kprd /cephfs/grid/t2k.org a /cephfs/grid/srr lr
 x xt2kusr /cephfs/grid/t2k.org/t2k.org/user a /cephfs/grid/t2k.org a /cephfs/grid/srr lr
 ##lsst new, with tmp authtest directory
-x xlsstdrpraw /cephfs/grid/lsst a  /cephfs/grid/srr lr
-x xlsstdrp /cephfs/grid/lsst/repos a /cephfs/grid/lsst/user a /cephfs/grid/lsst/datasets a  /cephfs/grid/srr lr
+x xlsstdrpraw /cephfs/grid/lsst/raw a /cephfs/grid/lsst lr /cephfs/grid/srr lr
+x xlsstdrp /cephfs/grid/lsst/repos a /cephfs/grid/lsst/user a /cephfs/grid/lsst/datasets a  /cephfs/grid/lsst/raw lr /cephfs/grid/srr lr
 ##lsst old, reduced regular user permissions
+x xlsstprd /cephfs/grid/lsst/repos a /cephfs/grid/lsst/user a /cephfs/grid/lsst/datasets a  /cephfs/grid/srr lr
 #x xlsstprd /cephfs/grid/lsst a /cephfs/grid/srr lr
 #x xlsstusr /cephfs/grid/lsst lr /cephfs/grid/srr lr
 ##dune
@@ -77,6 +78,6 @@ x xubooneusr /cephfs/grid/uboone lr /cephfs/grid/srr lr
 x xctaprd /cephfs/grid/vo.cta.in2p3.fr a /cephfs/grid/srr lr
 x xctausr /cephfs/grid/vo.cta.in2p3.fr/vo.cta.in2p3.fr a /cephfs/grid/vo.cta.in2p3.fr lr /cephfs/grid/srr lr
 x xctaoprd /cephfs/grid/vo.cta.in2p3.fr a /cephfs/grid/srr lr
-x xctaousr /cephfs/grid/vo.cta.in2p3.fr/vo.cta.in2p3.fr a /cephfs/grid/vo.cta.in2p3.fr lr /cephfs/grid/srr lr
+x xctaousr /cephfs/grid/vo.cta.in2p3.fr/vo.cta.in2p3.fr a /cephfs/grid/vo.cta.in2p3.fr/ctao a /cephfs/grid/vo.cta.in2p3.fr lr /cephfs/grid/srr lr
 #other access to srr
 u * /cephfs/grid/srr lr
