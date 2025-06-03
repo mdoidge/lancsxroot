@@ -39,6 +39,10 @@
 #ctao
 = xctaoprd o: ctao r: Data
 = xctaousr o: ctao
+#mu3e
+= xmu3eprd o: mu3e.org r: production
+= xmu3epil o: mu3e.org r: pilot
+= xmu3eusr o: mu3e.org
 ### Define acceses
 ## a - all-rights l - list (don't forget) r - read w - write
 #test VOs
@@ -78,5 +82,9 @@ x xctaprd /cephfs/grid/vo.cta.in2p3.fr a /cephfs/grid/srr lr
 x xctausr /cephfs/grid/vo.cta.in2p3.fr/vo.cta.in2p3.fr a /cephfs/grid/vo.cta.in2p3.fr lr /cephfs/grid/srr lr
 x xctaoprd /cephfs/grid/vo.cta.in2p3.fr a /cephfs/grid/srr lr
 x xctaousr /cephfs/grid/vo.cta.in2p3.fr/vo.cta.in2p3.fr a /cephfs/grid/vo.cta.in2p3.fr/ctao a /cephfs/grid/vo.cta.in2p3.fr lr /cephfs/grid/srr lr
+##mu3e.org
+x xmu3eprd /cephfs/grid/mu3e.org a /cephfs/grid/srr lr
+x xmu3epil /cephfs/grid/mu3e.org a /cephfs/grid/srr lr
+x xmu3eusr /cephfs/grid/mu3e.org/mu3e.org/user a /cephfs/grid/mu3e.org lr /cephfs/grid/srr lr
 #other access to srr
 u * /cephfs/grid/srr lr
