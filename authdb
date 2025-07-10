@@ -65,7 +65,7 @@ x xt2kusr /cephfs/grid/t2k.org/t2k.org/user a /cephfs/grid/t2k.org a /cephfs/gri
 x xlsstdrpraw /cephfs/grid/lsst/raw a /cephfs/grid/lsst lr /cephfs/grid/srr lr
 x xlsstdrp /cephfs/grid/lsst/repos a /cephfs/grid/lsst/user a /cephfs/grid/lsst/datasets a  /cephfs/grid/lsst/raw lr /cephfs/grid/lsst/butler-repos-index.yaml lr /cephfs/grid/srr lr
 ##lsst old, reduced regular user permissions
-x xlsstprd /cephfs/grid/lsst/repos a /cephfs/grid/lsst/user a /cephfs/grid/lsst/datasets a /cephfs/grid/lsst/butler-repos-index.yaml lr /cephfs/grid/lsst/raw lrw /cephfs/grid/srr lr
+x xlsstprd /cephfs/grid/lsst/repos a /cephfs/grid/lsst/user a /cephfs/grid/lsst/datasets a /cephfs/grid/lsst/raw a /cephfs/grid/lsst/butler-repos-index.yaml lr  /cephfs/grid/srr lr
 x xlsstusr /cephfs/grid/lsst/user lrwi /cephfs/grid/lsst/butler-repos-index.yaml lr /cephfs/grid/srr lr
 ##dune
 x xduneprd /cephfs/grid/dune a /cephfs/grid/srr lr
